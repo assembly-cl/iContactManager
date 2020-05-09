@@ -7,7 +7,30 @@
 		<key>iContactManagerLibrary.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>iContactManagerLibraryTests.xcscheme_^#shared#^_</key>
+		<dict>
+			<key>orderHint</key>
 			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>CA0131472466EB8300A78852</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA0131BE246715C800A78852</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>CA0131D824671AD900A78852</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

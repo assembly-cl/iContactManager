@@ -3,11 +3,22 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		CA01314C2466EB8300A78852 /* iContactManagerLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA01314B2466EB8300A78852 /* iContactManagerLibrary.swift */; };
+		CA0131B3246714B900A78852 /* ContactMockr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0131A7246714B900A78852 /* ContactMockr.swift */; platformFilter = ios; };
+		CA0131B4246714B900A78852 /* FileMockr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0131A8246714B900A78852 /* FileMockr.swift */; platformFilter = ios; };
+		CA0131B9246714B900A78852 /* FileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0131B1246714B900A78852 /* FileHandler.swift */; platformFilter = ios; };
+		CA0131BA246714B900A78852 /* ContactHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0131B2246714B900A78852 /* ContactHandler.swift */; platformFilter = ios; };
+		CA0132102467258000A78852 /* iContactManagerLibraryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA01320F2467258000A78852 /* iContactManagerLibraryTests.swift */; platformFilter = ios; };
+		CA01321B2467263C00A78852 /* TestContactHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0132162467263C00A78852 /* TestContactHandler.swift */; platformFilter = ios; };
+		CA01321C2467263C00A78852 /* TestFileHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0132172467263C00A78852 /* TestFileHandler.swift */; platformFilter = ios; };
+		CA01321D2467263C00A78852 /* TestContactMockr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA0132192467263C00A78852 /* TestContactMockr.swift */; platformFilter = ios; };
+		CA01321E2467263C00A78852 /* TestFileMockr.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA01321A2467263C00A78852 /* TestFileMockr.swift */; platformFilter = ios; };
+		CA0132232467655C00A78852 /* libiContactManagerLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CA0131482466EB8300A78852 /* libiContactManagerLibrary.a */; };
+		CA01323124676E5600A78852 /* Samba.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA01323024676E5600A78852 /* Samba.swift */; };
+		CA01323224676F0100A78852 /* Samba.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA01323024676E5600A78852 /* Samba.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +35,18 @@
 
 /* Begin PBXFileReference section */
 		CA0131482466EB8300A78852 /* libiContactManagerLibrary.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libiContactManagerLibrary.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		CA01314B2466EB8300A78852 /* iContactManagerLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iContactManagerLibrary.swift; sourceTree = "<group>"; };
+		CA0131A7246714B900A78852 /* ContactMockr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactMockr.swift; sourceTree = "<group>"; };
+		CA0131A8246714B900A78852 /* FileMockr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileMockr.swift; sourceTree = "<group>"; };
+		CA0131B1246714B900A78852 /* FileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileHandler.swift; sourceTree = "<group>"; };
+		CA0131B2246714B900A78852 /* ContactHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactHandler.swift; sourceTree = "<group>"; };
+		CA0131CB2467170A00A78852 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		CA01320D2467258000A78852 /* iContactManagerLibraryTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iContactManagerLibraryTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA01320F2467258000A78852 /* iContactManagerLibraryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iContactManagerLibraryTests.swift; sourceTree = "<group>"; };
+		CA0132162467263C00A78852 /* TestContactHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestContactHandler.swift; sourceTree = "<group>"; };
+		CA0132172467263C00A78852 /* TestFileHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFileHandler.swift; sourceTree = "<group>"; };
+		CA0132192467263C00A78852 /* TestContactMockr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestContactMockr.swift; sourceTree = "<group>"; };
+		CA01321A2467263C00A78852 /* TestFileMockr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFileMockr.swift; sourceTree = "<group>"; };
+		CA01323024676E5600A78852 /* Samba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Samba.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +57,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		CA01320A2467258000A78852 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA0132232467655C00A78852 /* libiContactManagerLibrary.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -42,7 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				CA01314A2466EB8300A78852 /* iContactManagerLibrary */,
+				CA01320E2467258000A78852 /* iContactManagerLibraryTests */,
 				CA0131492466EB8300A78852 /* Products */,
+				CA0131CA2467170A00A78852 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -50,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				CA0131482466EB8300A78852 /* libiContactManagerLibrary.a */,
+				CA01320D2467258000A78852 /* iContactManagerLibraryTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -57,9 +90,65 @@
 		CA01314A2466EB8300A78852 /* iContactManagerLibrary */ = {
 			isa = PBXGroup;
 			children = (
-				CA01314B2466EB8300A78852 /* iContactManagerLibrary.swift */,
+				CA0131B0246714B900A78852 /* Handles */,
+				CA0131A6246714B900A78852 /* Mockrs */,
 			);
 			path = iContactManagerLibrary;
+			sourceTree = "<group>";
+		};
+		CA0131A6246714B900A78852 /* Mockrs */ = {
+			isa = PBXGroup;
+			children = (
+				CA0131A7246714B900A78852 /* ContactMockr.swift */,
+				CA0131A8246714B900A78852 /* FileMockr.swift */,
+				CA01323024676E5600A78852 /* Samba.swift */,
+			);
+			path = Mockrs;
+			sourceTree = "<group>";
+		};
+		CA0131B0246714B900A78852 /* Handles */ = {
+			isa = PBXGroup;
+			children = (
+				CA0131B1246714B900A78852 /* FileHandler.swift */,
+				CA0131B2246714B900A78852 /* ContactHandler.swift */,
+			);
+			path = Handles;
+			sourceTree = "<group>";
+		};
+		CA0131CA2467170A00A78852 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA0131CB2467170A00A78852 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA01320E2467258000A78852 /* iContactManagerLibraryTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA0132152467263C00A78852 /* TestHandlers */,
+				CA0132182467263C00A78852 /* TestMockrs */,
+				CA01320F2467258000A78852 /* iContactManagerLibraryTests.swift */,
+			);
+			path = iContactManagerLibraryTests;
+			sourceTree = "<group>";
+		};
+		CA0132152467263C00A78852 /* TestHandlers */ = {
+			isa = PBXGroup;
+			children = (
+				CA0132162467263C00A78852 /* TestContactHandler.swift */,
+				CA0132172467263C00A78852 /* TestFileHandler.swift */,
+			);
+			path = TestHandlers;
+			sourceTree = "<group>";
+		};
+		CA0132182467263C00A78852 /* TestMockrs */ = {
+			isa = PBXGroup;
+			children = (
+				CA0132192467263C00A78852 /* TestContactMockr.swift */,
+				CA01321A2467263C00A78852 /* TestFileMockr.swift */,
+			);
+			path = TestMockrs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -82,6 +171,23 @@
 			productReference = CA0131482466EB8300A78852 /* libiContactManagerLibrary.a */;
 			productType = "com.apple.product-type.library.static";
 		};
+		CA01320C2467258000A78852 /* iContactManagerLibraryTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA0132122467258000A78852 /* Build configuration list for PBXNativeTarget "iContactManagerLibraryTests" */;
+			buildPhases = (
+				CA0132092467258000A78852 /* Sources */,
+				CA01320A2467258000A78852 /* Frameworks */,
+				CA01320B2467258000A78852 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iContactManagerLibraryTests;
+			productName = iContactManagerLibraryTests;
+			productReference = CA01320D2467258000A78852 /* iContactManagerLibraryTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -93,6 +199,9 @@
 				ORGANIZATIONNAME = "Assembly Chile";
 				TargetAttributes = {
 					CA0131472466EB8300A78852 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					CA01320C2467258000A78852 = {
 						CreatedOnToolsVersion = 11.3.1;
 					};
 				};
@@ -111,16 +220,44 @@
 			projectRoot = "";
 			targets = (
 				CA0131472466EB8300A78852 /* iContactManagerLibrary */,
+				CA01320C2467258000A78852 /* iContactManagerLibraryTests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA01320B2467258000A78852 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CA0131442466EB8300A78852 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA01314C2466EB8300A78852 /* iContactManagerLibrary.swift in Sources */,
+				CA0131B9246714B900A78852 /* FileHandler.swift in Sources */,
+				CA01323124676E5600A78852 /* Samba.swift in Sources */,
+				CA0131B4246714B900A78852 /* FileMockr.swift in Sources */,
+				CA0131BA246714B900A78852 /* ContactHandler.swift in Sources */,
+				CA0131B3246714B900A78852 /* ContactMockr.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA0132092467258000A78852 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA01323224676F0100A78852 /* Samba.swift in Sources */,
+				CA0132102467258000A78852 /* iContactManagerLibraryTests.swift in Sources */,
+				CA01321D2467263C00A78852 /* TestContactMockr.swift in Sources */,
+				CA01321C2467263C00A78852 /* TestFileHandler.swift in Sources */,
+				CA01321E2467263C00A78852 /* TestFileMockr.swift in Sources */,
+				CA01321B2467263C00A78852 /* TestContactHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -267,6 +404,42 @@
 			};
 			name = Release;
 		};
+		CA0132132467258000A78852 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44GQS57MJJ;
+				INFOPLIST_FILE = iContactManagerLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.assembly.iContactManagerLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA0132142467258000A78852 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 44GQS57MJJ;
+				INFOPLIST_FILE = iContactManagerLibraryTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cl.assembly.iContactManagerLibraryTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -284,6 +457,15 @@
 			buildConfigurations = (
 				CA0131502466EB8300A78852 /* Debug */,
 				CA0131512466EB8300A78852 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA0132122467258000A78852 /* Build configuration list for PBXNativeTarget "iContactManagerLibraryTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA0132132467258000A78852 /* Debug */,
+				CA0132142467258000A78852 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
