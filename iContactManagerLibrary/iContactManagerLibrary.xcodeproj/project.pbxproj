@@ -47,6 +47,7 @@
 		CA0132192467263C00A78852 /* TestContactMockr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestContactMockr.swift; sourceTree = "<group>"; };
 		CA01321A2467263C00A78852 /* TestFileMockr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestFileMockr.swift; sourceTree = "<group>"; };
 		CA01323024676E5600A78852 /* Samba.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Samba.swift; sourceTree = "<group>"; };
+		CA0132332467C73800A78852 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = ../../../iContactManagerVCF/iContactManagerVCF/Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +91,7 @@
 		CA01314A2466EB8300A78852 /* iContactManagerLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				CA0132332467C73800A78852 /* Info.plist */,
 				CA0131B0246714B900A78852 /* Handles */,
 				CA0131A6246714B900A78852 /* Mockrs */,
 			);
@@ -383,6 +385,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44GQS57MJJ;
+				INFOPLIST_FILE = iContactManagerLibrary/Info.plist;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -396,6 +399,7 @@
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44GQS57MJJ;
+				INFOPLIST_FILE = iContactManagerLibrary/Info.plist;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

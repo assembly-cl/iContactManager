@@ -23,6 +23,9 @@ import Foundation
 import Contacts
 
 class ContactHandler {
+    // Store singleton
+    static let contatcStore = CNContactStore.init()
+    
     // Contacts: get by name
     // Status: working, needs filtering improvements
     class func getContactsByName(contactName: String) -> [CNContact] {
@@ -47,7 +50,6 @@ class ContactHandler {
     // Status: ready
     class func getContacts() -> [CNContact] {
         var contacts : [CNContact] = []
-        let contatcStore = CNContactStore()
         let fetchRequest = CNContactFetchRequest.init(keysToFetch: [CNContactVCardSerialization.descriptorForRequiredKeys()])
         try! contatcStore.enumerateContacts(with: fetchRequest) { (contact, end) in
             contacts.append(contact)
